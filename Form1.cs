@@ -740,7 +740,6 @@ namespace autopark
 
         private void ItemsExpensesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // запуск новой формы
             using (FCars fCars = new FCars())
             {
                 if (fCars.ShowDialog() == DialogResult.OK)
