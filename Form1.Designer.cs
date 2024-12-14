@@ -102,6 +102,7 @@
             this.btnDeleteTO = new System.Windows.Forms.Button();
             this.btnUpdateTO = new System.Windows.Forms.Button();
             this.btnAppendTO = new System.Windows.Forms.Button();
+            this.ItemsExpensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pCarsList.SuspendLayout();
             this.pCarsGrid.SuspendLayout();
             this.gbCarsInPark.SuspendLayout();
@@ -475,7 +476,8 @@
             // справочникиToolStripMenuItem
             // 
             this.справочникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.carsToolStripMenuItem});
+            this.carsToolStripMenuItem,
+            this.ItemsExpensesToolStripMenuItem});
             this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
             this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.справочникиToolStripMenuItem.Text = "Справочники";
@@ -483,7 +485,7 @@
             // carsToolStripMenuItem
             // 
             this.carsToolStripMenuItem.Name = "carsToolStripMenuItem";
-            this.carsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.carsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.carsToolStripMenuItem.Text = "Автомобили";
             this.carsToolStripMenuItem.Click += new System.EventHandler(this.carsToolStripMenuItem_Click);
             // 
@@ -915,6 +917,13 @@
             this.btnAppendTO.UseVisualStyleBackColor = true;
             this.btnAppendTO.Click += new System.EventHandler(this.btnAppendTO_Click);
             // 
+            // ItemsExpensesToolStripMenuItem
+            // 
+            this.ItemsExpensesToolStripMenuItem.Name = "ItemsExpensesToolStripMenuItem";
+            this.ItemsExpensesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ItemsExpensesToolStripMenuItem.Text = "Расходы";
+            this.ItemsExpensesToolStripMenuItem.Click += new System.EventHandler(this.ItemsExpensesToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1040,6 +1049,7 @@
         private System.Windows.Forms.Button btnCancelChangeExpense;
         private System.Windows.Forms.Button btnSaveExpense;
         private System.Windows.Forms.TextBox tbAmount;
+        private System.Windows.Forms.ToolStripMenuItem ItemsExpensesToolStripMenuItem;
     }
 }
 
