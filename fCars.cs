@@ -17,10 +17,7 @@ namespace autopark
     {
         OleDbConnection con;
         OleDbDataAdapter daBrand;
-        OleDbDataAdapter daModel;
-        OleDbCommand cmd;
-        DataSet dsBrand;
-        DataSet dsModel;
+        OleDbDataAdapter daModel;        
         DataSet DS;
         // флаг успешного изменения БД
         DialogResult dResult = DialogResult.Cancel;
