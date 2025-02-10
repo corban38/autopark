@@ -9,6 +9,11 @@ namespace autopark
     internal class MyNeedsFunction
     {
         public MyNeedsFunction() { }
+        public static string connectionString( string connString = null)
+        {
+            if (connString == null) { connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=autopark.mdb"; }
+            return connString;
+        }
         public string GetQueryStringExpenses(string car_id)
         {
             return "SELECT "

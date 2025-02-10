@@ -62,6 +62,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ItemsExpensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.pCarTO_Delail = new System.Windows.Forms.Panel();
             this.gbCarsTO = new System.Windows.Forms.GroupBox();
@@ -102,7 +103,7 @@
             this.btnDeleteTO = new System.Windows.Forms.Button();
             this.btnUpdateTO = new System.Windows.Forms.Button();
             this.btnAppendTO = new System.Windows.Forms.Button();
-            this.ItemsExpensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.providersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pCarsList.SuspendLayout();
             this.pCarsGrid.SuspendLayout();
             this.gbCarsInPark.SuspendLayout();
@@ -477,7 +478,8 @@
             // 
             this.справочникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.carsToolStripMenuItem,
-            this.ItemsExpensesToolStripMenuItem});
+            this.ItemsExpensesToolStripMenuItem,
+            this.providersToolStripMenuItem});
             this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
             this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.справочникиToolStripMenuItem.Text = "Справочники";
@@ -488,6 +490,13 @@
             this.carsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.carsToolStripMenuItem.Text = "Автомобили";
             this.carsToolStripMenuItem.Click += new System.EventHandler(this.carsToolStripMenuItem_Click);
+            // 
+            // ItemsExpensesToolStripMenuItem
+            // 
+            this.ItemsExpensesToolStripMenuItem.Name = "ItemsExpensesToolStripMenuItem";
+            this.ItemsExpensesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ItemsExpensesToolStripMenuItem.Text = "Расходы";
+            this.ItemsExpensesToolStripMenuItem.Click += new System.EventHandler(this.ItemsExpensesToolStripMenuItem_Click);
             // 
             // splitter1
             // 
@@ -917,12 +926,12 @@
             this.btnAppendTO.UseVisualStyleBackColor = true;
             this.btnAppendTO.Click += new System.EventHandler(this.btnAppendTO_Click);
             // 
-            // ItemsExpensesToolStripMenuItem
+            // providersToolStripMenuItem
             // 
-            this.ItemsExpensesToolStripMenuItem.Name = "ItemsExpensesToolStripMenuItem";
-            this.ItemsExpensesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ItemsExpensesToolStripMenuItem.Text = "Расходы";
-            this.ItemsExpensesToolStripMenuItem.Click += new System.EventHandler(this.ItemsExpensesToolStripMenuItem_Click);
+            this.providersToolStripMenuItem.Name = "providersToolStripMenuItem";
+            this.providersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.providersToolStripMenuItem.Text = "Поставщики";
+            this.providersToolStripMenuItem.Click += new System.EventHandler(this.providersToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -1050,6 +1059,7 @@
         private System.Windows.Forms.Button btnSaveExpense;
         private System.Windows.Forms.TextBox tbAmount;
         private System.Windows.Forms.ToolStripMenuItem ItemsExpensesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem providersToolStripMenuItem;
     }
 }
 

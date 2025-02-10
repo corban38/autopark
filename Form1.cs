@@ -750,5 +750,16 @@ namespace autopark
 
             }
         }
+
+        private void providersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (fProviders ProvidersForm = new fProviders())
+            {
+                if (ProvidersForm.ShowDialog() == DialogResult.OK)
+                {
+                    // 
+                }
+            }
+        }
     }
 }
