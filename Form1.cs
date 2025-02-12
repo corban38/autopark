@@ -761,5 +761,16 @@ namespace autopark
                 }
             }
         }
+
+        private void ProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (FProducts ProductsForm = new FProducts())
+            {
+                if (ProductsForm.ShowDialog() == DialogResult.OK)
+                {
+                    //
+                }
+            }
+        }
     }
 }

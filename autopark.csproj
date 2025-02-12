@@ -73,6 +73,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FProductDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProductDetail.Designer.cs">
+      <DependentUpon>FProductDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProducts.Designer.cs">
+      <DependentUpon>FProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="fProviders.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,11 +94,23 @@
     <Compile Include="MyNeedsFunction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProviderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProviderDetail.Designer.cs">
+      <DependentUpon>ProviderDetail.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="fCars.resx">
       <DependentUpon>fCars.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProductDetail.resx">
+      <DependentUpon>FProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProducts.resx">
+      <DependentUpon>FProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fProviders.resx">
       <DependentUpon>fProviders.cs</DependentUpon>
@@ -100,6 +124,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ProviderDetail.resx">
+      <DependentUpon>ProviderDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

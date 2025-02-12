@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panTop = new System.Windows.Forms.Panel();
+            this.btnChangeItem = new System.Windows.Forms.Button();
             this.btnSaveChanges = new System.Windows.Forms.Button();
             this.btnAddProvider = new System.Windows.Forms.Button();
             this.panList = new System.Windows.Forms.Panel();
@@ -40,6 +41,7 @@
             // 
             // panTop
             // 
+            this.panTop.Controls.Add(this.btnChangeItem);
             this.panTop.Controls.Add(this.btnSaveChanges);
             this.panTop.Controls.Add(this.btnAddProvider);
             this.panTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -47,6 +49,16 @@
             this.panTop.Name = "panTop";
             this.panTop.Size = new System.Drawing.Size(800, 36);
             this.panTop.TabIndex = 0;
+            // 
+            // btnChangeItem
+            // 
+            this.btnChangeItem.Location = new System.Drawing.Point(294, 7);
+            this.btnChangeItem.Name = "btnChangeItem";
+            this.btnChangeItem.Size = new System.Drawing.Size(75, 23);
+            this.btnChangeItem.TabIndex = 2;
+            this.btnChangeItem.Text = "Изменить";
+            this.btnChangeItem.UseVisualStyleBackColor = true;
+            this.btnChangeItem.Click += new System.EventHandler(this.btnChangeItem_Click);
             // 
             // btnSaveChanges
             // 
@@ -89,6 +101,7 @@
             this.dgvList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvList.Size = new System.Drawing.Size(800, 414);
             this.dgvList.TabIndex = 0;
+            this.dgvList.Paint += new System.Windows.Forms.PaintEventHandler(this.dgvList_Paint);
             this.dgvList.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dgvList_KeyUp);
             // 
             // fProviders
@@ -99,7 +112,7 @@
             this.Controls.Add(this.panList);
             this.Controls.Add(this.panTop);
             this.Name = "fProviders";
-            this.Text = "fProviders";
+            this.Text = "Поставщики";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fProviders_FormClosing);
             this.Load += new System.EventHandler(this.fProviders_Load);
             this.panTop.ResumeLayout(false);
@@ -116,5 +129,6 @@
         private System.Windows.Forms.DataGridView dgvList;
         private System.Windows.Forms.Button btnAddProvider;
         private System.Windows.Forms.Button btnSaveChanges;
+        private System.Windows.Forms.Button btnChangeItem;
     }
 }
